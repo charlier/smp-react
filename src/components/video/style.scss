@@ -1,0 +1,34 @@
+@import '~style/mixins';
+@import '~style/variables';
+
+$video-background: $black;
+
+.wrap {
+  @include gel-wrap;
+
+  .layout {
+    @include gel-layout;
+  }
+
+  .item {
+    @include gel-layout-item;
+  }
+
+  .video {
+    overflow: hidden;
+    background: $video-background;
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+  }
+
+  .player {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+}

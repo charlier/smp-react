@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='en-GB'>
+<head>
+	<% for (var chunk in htmlWebpackPlugin.files.css) { %>
+		<link rel="preload" href="<%= htmlWebpackPlugin.files.css[chunk] %>"  as="style">
+	<% } %>
+	<% for (var chunk in htmlWebpackPlugin.files.chunks) { %>
+		<link rel="preload" href="<%= htmlWebpackPlugin.files.chunks[chunk].entry %>" as="script">
+	<% } %>
+	<meta charset="utf-8">
+	<title>SMP Player</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="SMP Player">
+	<script type="text/javascript" src="http://static.bbci.co.uk/frameworks/requirejs/0.13.0/sharedmodules/require.js"></script>
+	<script type="text/javascript">
+			bbcRequireMap = {
+					"jquery-1.9":"//static.bbci.co.uk/frameworks/jquery/0.3.0/sharedmodules/jquery-1.9.1",
+					"swfobject-2":"//static.bbci.co.uk/frameworks/swfobject/0.1.10/sharedmodules/swfobject-2",
+					"bump-3":"//emp.bbci.co.uk/emp/bump-3/bump-3"
+			}
+			require({ paths: bbcRequireMap, waitSeconds: 30 });
+	</script>
+</head>
+<body></body>
+</html>

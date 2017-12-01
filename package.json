@@ -1,0 +1,47 @@
+{
+  "name": "smpplayer",
+  "version": "0.0.1",
+  "description": "SMP Player",
+  "scripts": {
+    "start": "webpack-dev-server --inline --hot --progress",
+    "build": "NODE_ENV=production webpack --progress",
+    "prebuild": "mkdirp build"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "babel-runtime": "^6.26.0",
+    "css-loader": "^0.28.7",
+    "deep-equal": "^1.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "gel-grid": "^3.0.4",
+    "gel-sass-tools": "^1.2.1",
+    "html-webpack-plugin": "^2.30.1",
+    "identity-obj-proxy": "^3.0.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.7.2",
+    "postcss-assets": "^5.0.0",
+    "postcss-loader": "^2.0.9",
+    "postcss-utils": "^1.0.2",
+    "preact": "^8.2.6",
+    "preact-compat": "^3.17.0",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.19.0",
+    "svg-sprite-loader": "^3.4.1",
+    "uglifyjs-webpack-plugin": "^1.1.2",
+    "webpack": "^3.9.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.9.5"
+  },
+  "main": "src/index.js"
+}
