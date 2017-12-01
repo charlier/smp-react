@@ -22,7 +22,6 @@ export default class VideoItem extends Component {
 				}
 			};
 			const mediaPlayer = $('#mediaPlayer').player(settings);
-			window.mediaPlayer = mediaPlayer;
 			mediaPlayer.load()
 			mediaPlayer.bind('timeupdate', (t) => _updateTime(t))
 			mediaPlayer.bind('playlistEnded', () => mediaPlayer.play())
